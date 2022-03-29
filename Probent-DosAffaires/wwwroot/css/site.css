@@ -1,0 +1,22 @@
+/* Copyright (C) 2022  Thibaut Hebert--Henriette
+ * See https://github.com/ThibautHH/Probent-DosAffaires/blob/main/NOTICE for full notice.
+ */
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}

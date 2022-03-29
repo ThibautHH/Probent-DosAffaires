@@ -1,0 +1,16 @@
+﻿// Copyright (C) 2022  Thibaut Hebert--Henriette
+// See https://github.com/ThibautHH/Probent-DosAffaires/blob/main/NOTICE for full notice.
+
+{
+  "profiles": {
+    "Probent-DosAffaires": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "https://localhost:7157;http://localhost:5157",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

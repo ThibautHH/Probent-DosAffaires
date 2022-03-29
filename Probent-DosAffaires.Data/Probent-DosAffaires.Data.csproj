@@ -1,0 +1,20 @@
+<!--Copyright (C) 2022  Thibaut Hebert- -Henriette-->
+<!--See https://github.com/ThibautHH/Probent-DosAffaires/blob/main/NOTICE for full notice.-->
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>ProbentDosAffaires.Data</RootNamespace>
+	<EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+	<IsPackable>true</IsPackable>
+	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	<Authors>Thibaut Hebert--Henriette</Authors>
+	<RepositoryUrl>https://github.com/ThibautHH/Probent-DosAffaires</RepositoryUrl>
+	<Description>Bibliothèque de gestion des données de Probent-DosAffaires.</Description>
+	<PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
+	<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+</Project>

@@ -1,0 +1,20 @@
+<!--Copyright (C) 2022  Thibaut Hebert- -Henriette-->
+<!--See https://github.com/ThibautHH/Probent-DosAffaires/blob/main/NOTICE for full notice.-->
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>ProbentDosAffaires</RootNamespace>
+    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+	<IsPackable>true</IsPackable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>Thibaut Hebert--Henriette</Authors>
+    <RepositoryUrl>https://github.com/ThibautHH/Probent-DosAffaires</RepositoryUrl>
+    <Description>Site ASP.NET Core MVC de démonstration de la bibliothèque Probent-DosAffaires.</Description>
+    <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+</Project>
