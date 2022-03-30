@@ -4,11 +4,16 @@
 
 WebApplicationBuilder? builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddControllersWithViews();
 
 WebApplication? app = builder.Build();
 
-if (!app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment())
+{
+    app.UseDeveloperExceptionPage();
+    app.UseMigrationsEndPoint();
+} else
 {
     app.UseExceptionHandler("/Home/Error");
     app.UseHsts();
@@ -19,6 +24,13 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.MapDefaultControllerRoute();
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+        name: "areas",
+        pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+    );
+    endpoints.MapDefaultControllerRoute();
+});
 
 app.Run();

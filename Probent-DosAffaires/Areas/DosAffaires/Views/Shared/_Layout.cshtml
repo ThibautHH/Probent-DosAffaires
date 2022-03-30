@@ -6,7 +6,7 @@ See https://github.com/ThibautHH/Probent-DosAffaires/blob/main/NOTICE for full n
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - @(ViewData["Area"] ?? "Probent-DosAffaires")"</title>
+    <title>@ViewData["Title"] - DosAffaires</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Probent-DosAffaires.styles.css" asp-append-version="true" />
@@ -16,6 +16,8 @@ See https://github.com/ThibautHH/Probent-DosAffaires/blob/main/NOTICE for full n
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Probent-DosAffaires</a>
+                &ensp;&mdash;&ensp;
+                <a class="navbar-brand" asp-area="@ViewData["Area"]" asp-controller="Home" asp-action="Index">@ViewData["Area"]</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -23,7 +25,16 @@ See https://github.com/ThibautHH/Probent-DosAffaires/blob/main/NOTICE for full n
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="DosAffaires" asp-controller="Home" asp-action="Index">DosAffaires</a>
+                            <a class="nav-link text-dark" asp-area="DosAffaires" asp-controller="Home" asp-action="Index">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="DosAffaires" asp-controller="DosimétrieAffaires" asp-action="Index">Dosimétrie par affaire</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="DosAffaires" asp-controller="Recoupement" asp-action="Index">Recoupement des heures</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="DosAffaires" asp-controller="Home" asp-action="APropos">À propos</a>
                         </li>
                     </ul>
                 </div>
@@ -38,7 +49,7 @@ See https://github.com/ThibautHH/Probent-DosAffaires/blob/main/NOTICE for full n
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2022 - Probent-DosAffaires
+            &copy; 2022 - Probent-DosAffaires - <a asp-area="DosAffaires" asp-controller="Home" asp-action="APropos">À propos</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
