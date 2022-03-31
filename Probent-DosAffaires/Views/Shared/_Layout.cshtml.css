@@ -2,12 +2,6 @@
  * See https://github.com/ThibautHH/Probent-DosAffaires/blob/main/NOTICE for full notice.
  */
 
-a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
-}
-
 a {
   color: #0077cc;
 }

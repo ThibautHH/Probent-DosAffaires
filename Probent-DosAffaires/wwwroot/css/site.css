@@ -20,3 +20,17 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+a.navbar-brand:not(:only-of-type) {
+    margin-right: initial;
+}
+
+a.navbar-brand:not(:only-of-type):last-of-type {
+    margin-right: 1rem;
+}
