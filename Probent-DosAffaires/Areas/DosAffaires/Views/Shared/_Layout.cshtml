@@ -8,8 +8,10 @@ See https://github.com/ThibautHH/Probent-DosAffaires/blob/main/NOTICE for full n
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - DosAffaires</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/awesome/css/themes/gui3/AwesomeMvc.css">
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Probent-DosAffaires.styles.css" asp-append-version="true" />
+    @Html.Awe().AwejQuery()
 </head>
 <body>
     <header>
@@ -54,6 +56,10 @@ See https://github.com/ThibautHH/Probent-DosAffaires/blob/main/NOTICE for full n
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/awesome/js/AwesomeMvc.js"></script>
+    <script src="~/lib/awesome/js/awem.js"></script>
+    <script src="~/lib/awesome/js/utils.js"></script>
+    @Html.Awe().Init()
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>

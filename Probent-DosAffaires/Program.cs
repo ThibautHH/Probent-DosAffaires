@@ -2,10 +2,12 @@
  * See https://github.com/ThibautHH/Probent-DosAffaires/blob/main/NOTICE for full notice.
  */
 
+using Omu.AwesomeMvc;
+
 WebApplicationBuilder? builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews(options => options.ModelMetadataDetailsProviders.Add(new AweMetaProvider()));
 
 WebApplication? app = builder.Build();
 
